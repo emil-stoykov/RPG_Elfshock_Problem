@@ -1,13 +1,6 @@
-﻿using Entities.Entities.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities.Entities
+﻿namespace Entities.Entities
 {
-    public class Mage : Entity, IPlayerCharacter
+    public class Mage : Entity
     {
         public Mage() : base()
         {

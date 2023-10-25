@@ -1,13 +1,6 @@
-﻿using Entities.Entities.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities.Entities
+﻿namespace Entities.Entities
 {
-    public class Archer : Entity, IPlayerCharacter
+    public class Archer : Entity
     {
         public Archer() : base()
         {
