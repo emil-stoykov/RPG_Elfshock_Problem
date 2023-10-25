@@ -204,9 +204,7 @@ namespace RPG_Elfshock
 
                                 if (chosenEnemy.Health == 0)
                                 {
-                                    Console.WriteLine($"Killed enemy at position [{string.Join(",", chosenEnemy.Pos)}]!");
-                                    matrix.DeleteEntityFromMatrix(chosenEnemy.Pos);
-                                    matrix.EnemiesInMatrix.Remove(chosenEnemy);
+                                    matrix.DeleteEntityFromMatrix(chosenEnemy);
                                 }
 
                             } 

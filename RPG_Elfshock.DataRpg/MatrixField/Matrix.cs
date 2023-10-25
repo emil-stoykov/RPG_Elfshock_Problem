@@ -83,6 +83,7 @@ namespace RpgData.MatrixField
             this.MatrixField = new char[Size, Size];
             this.PlayerPos = new int[2];
         }
+
         public void PlacePlayer(int[] startPlayerPos) { 
             this.PlayerPos = startPlayerPos;
             this.MatrixField[this.PlayerPos[0], this.PlayerPos[1]] = PlayerSymbol; 
@@ -216,7 +217,12 @@ namespace RpgData.MatrixField
 
         public bool EntityInRange(int[] pos, int range) => Math.Abs(this.PlayerPos[0] - pos[0]) <= range && Math.Abs(this.PlayerPos[1] - pos[1]) <= range;
 
-        public void DeleteEntityFromMatrix(int[] pos) => this.MatrixField[pos[0], pos[1]] = MatrixSymbol;
+        public void DeleteEntityFromMatrix(Enemy enemy)
+        {
+            Console.WriteLine($"Killed enemy at position [{string.Join(",", enemy.Pos)}]!");
+            this.MatrixField[enemy.Pos[0], enemy.Pos[1]] = MatrixSymbol;
+            this.EnemiesInMatrix.Remove(enemy);
+        }
 
         private bool IsPosArrayInvalid(int[] arr) => (arr[0] < 0 || arr[0] >= Size) || (arr[1] < 0 || arr[1] >= Size);
 
