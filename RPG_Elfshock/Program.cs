@@ -1,21 +1,12 @@
 ﻿using Entities.Entities;
-using System.IO;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Data;
-using System.Security.Cryptography.X509Certificates;
-using Entities.Entities.Interfaces;
-using System.Diagnostics.Eventing.Reader;
 using RPG_Elfshock.DataRpg;
-using static System.Net.Mime.MediaTypeNames;
 using Models;
 using RpgData.MatrixField;
-using System.Runtime.CompilerServices;
-using System;
-using System.Text;
-using System.Linq;
 
 namespace RPG_Elfshock
 {

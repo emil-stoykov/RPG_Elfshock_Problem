@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static RPG_Elfshock.Common.EntityConstants;
-
-namespace Entities.Entities
+﻿namespace Entities.Entities
 {
     public abstract class Entity
     {

@@ -1,13 +1,6 @@
-﻿using Entities.Entities.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entities.Entities
+﻿namespace Entities.Entities
 {
-    public class Warrior : Entity, IPlayerCharacter
+    public class Warrior : Entity
     {
         public Warrior() : base()
         {
